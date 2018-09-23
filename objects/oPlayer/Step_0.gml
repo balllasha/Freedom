@@ -39,7 +39,7 @@ y = y + vsp;
 if (!place_meeting(x,y+1,oWall))
 {
 	//Insert jump animation here
-	sprite_index = sJump;
+	sprite_index = sPlayerJump;
 	image_speed = 0;
 	if (sign(vsp) > 0) 
 	{
@@ -55,7 +55,7 @@ else
 	image_speed = 1;
 	if(hsp == 0)
 	{
-		image_index = sPlayer;
+		image_index = sPlayerIdle;
 	}
 	else
 	{
